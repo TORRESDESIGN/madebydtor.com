@@ -1,0 +1,11 @@
+/* TEAM */
+	Cheif:Daniel Torres
+	Contact: Daniel.Torres.84 [at] Gmail.com
+	Twitter: @RoosterMonster
+	From: Snohomish, Washington, USA
+
+/* SITE */
+	Last update:2021/04/20
+	Language: English / Español
+	Doctype:HTML5
+	IDE: Sublime Text
