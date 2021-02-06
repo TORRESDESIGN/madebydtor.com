@@ -76,7 +76,7 @@ header {
 	z-index: 2;
 }
 p {
-	opacity: 87%;
+	opacity: 0.87;
 	letter-spacing: 0.5px;
 }
 h1 {
@@ -347,16 +347,24 @@ footer {
 .img-responsive {
 	width: 100%;
 }
+figure img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+figure {
+	transition: 0.3s all ease-in-out;
+}
 figure:hover {
-	opacity: 85%;
+	opacity: 0.87;
 }
 figcaption {
 	padding: 0.5em 1em;
+	opacity: 0.87;
 }
 i {
 	font-size: 0.8em;
 	padding: 1em;
-	opacity: 85%;
+	opacity: 0.87;
 }
 .portfolio-area div:nth-child(1) {
   grid-column: 1;
