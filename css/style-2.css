@@ -356,6 +356,11 @@ details {
   /*padding-bottom: 5px;*/
   border-bottom: 2px solid black;
 }
+#palindromeStatus {
+	margin-top: 1em;
+	text-align: center;
+	padding: 1em;
+}
 .portfolio {
   display: grid;
   column-gap: 15px;
