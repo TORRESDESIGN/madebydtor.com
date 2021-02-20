@@ -421,7 +421,9 @@ details {
   min-height: 310px;
   max-width: 590px;
   max-height: 590px;
-  background: orange;
+  background: white;
+  border-radius: 10px;
+  padding-bottom: 0.5em;
 }
 .img-responsive {
 	width: 100%;
