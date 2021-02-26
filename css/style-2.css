@@ -391,9 +391,18 @@ details {
 	padding: 8px 10px;
 	cursor: pointer;
 	border: 2px solid var(--bg-light-blue);
+	border-radius: 10px;
 	color: var(--bg-light-blue);
 	right: 20px;
 	top: 20px;
+}
+.btn-3:hover {
+	color: pink;
+	border: 2px solid pink;
+}
+.fa-times {
+	color: red;
+	font-size: 3em;
 }
 .col-1 {
   grid-column: 1; 
