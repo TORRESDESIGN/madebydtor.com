@@ -4,6 +4,11 @@ const cBtn = document.getElementById("code-btn");
 const codes = document.querySelectorAll(".code");
 const dBtn = document.getElementById("design-btn");
 const designs = document.querySelectorAll(".design");
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var span = document.getElementById("close");
 
 for (let i = 0; i < link.length; i++) {
   link[i].addEventListener("click", () => {
@@ -41,3 +46,27 @@ dBtn.addEventListener("click", () => {
   });
 });
 
+//Modal Images Viewer
+// not sure why this eventlistener didn't work with src??
+/*
+img.addEventListener("click", () => {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+});
+*/
+img.onclick = function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+//closes Modal Viewer
+/*
+span.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+*/
+span.onclick = function() {
+  modal.style.display = "none";
+}

@@ -399,6 +399,7 @@ details {
 .btn-3:hover {
 	color: pink;
 	border: 2px solid pink;
+	outline: none;
 }
 .fa-times {
 	color: red;
@@ -474,6 +475,7 @@ i {
 }
 .modal {
 	display: none;
+	outline: none;
 	position: fixed;
 	z-index: 51;
 	padding-top: 100px;
@@ -483,6 +485,23 @@ i {
 	height: 100%;
 	background: black;
 }
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 1200px;
+}
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 1200px;
+	text-align: center;
+	color: var(--bg-light-blue);
+	padding: 1em 0;
+	height: 150px;
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -647,7 +666,10 @@ footer {
 	width: 100%;
 	padding: 1px 7px;
 	background: var(--background-color);
-}
+	}
+	.modal-content {
+		width: 100%;
+	}
 }
 /*@media query end*/
 
