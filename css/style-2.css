@@ -352,21 +352,23 @@ details {
 	line-height: 1.5;
 	user-select: none;
 	cursor: pointer;
-}
+}/*
 .underline {
   margin: 0 auto;
   /*padding-bottom: 5px;*/
-  border-bottom: 2px solid black;
-}
+  /*border-bottom: 2px solid black;
+}*/
 #palindromeStatus {
 	margin-top: 1em;
 	text-align: center;
 	padding: 1em;
 }
-.portfolio {
-  display: grid;
-  column-gap: 15px;
-  grid-template-columns: auto 1fr auto auto;
+.portfolio-head {
+	border-bottom: 2px solid black;
+	margin: 0 auto;
+  	display: grid;
+  	column-gap: 15px;
+  	grid-template-columns: auto 1fr auto auto;
 }
 .btn-2 {
 	outline: none;
@@ -486,7 +488,7 @@ i {
 	background: black;
 }
 .modal-content {
-	margin: auto;
+	margin: 20px auto;
 	display: block;
 	width: 80%;
 	max-width: 1200px;
@@ -501,17 +503,34 @@ i {
 	padding: 1em 0;
 	height: 150px;
 }
-
 footer {
-  width: 100%;
-  height: auto;
-  background-image: linear-gradient(
-    90deg,
-    var(--primary-blue),
-    var(--primary-teal)
-  );
-  color: var(--light-color);
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(
+	90deg,
+	var(--primary-blue),
+	var(--primary-teal)
+	);
+	color: var(--light-color);
 }
+.contact-head {
+	border-bottom: 2px solid var(--bg-light-blue);
+	margin: 0 auto;
+	width: 95%;
+	min-width: 310px;
+	max-width: 1200px;
+	height: auto;
+}
+#form-outer {
+	display: grid;
+  	column-gap: 15px;
+	grid-template-columns: 1fr 1fr;
+	min-width: 310px;
+	max-width: 120;
+	width: 95%;
+	margin: 0 auto;
+}
+
 @keyframes slow-move {
   0% {
     margin-left: 0px;

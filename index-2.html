@@ -73,8 +73,8 @@
 			  </div>
 			</div>
 		</div>
-		<div class="underline portfolio">
-			<h6 id="portfolio" class="col-1">Portfolio</h6>
+		<div class="portfolio-head">
+			<h6 class="col-1">Portfolio</h6>
 			<button id="code-btn" class="btn-2 col-3 active">
 			  <span class="fas fa-code"></span>
 			  <h7>Code</h7>
@@ -112,32 +112,32 @@
 				<figcaption class="">Ron Swonson Quote Generator</figcaption>
 			</figure>
 			<figure class="filterDiv design-card design">
-				<img src="images/NoRiskArt.png" alt="Skull art with the phrase No Risk No Reward" class="img-responsive" id="myImg">
+				<img src="images/NoRiskArt.png" alt="Skull art with the phrase No Risk No Reward" class="img-responsive myImg">
 				<i>- Illustrator</i>
 				<figcaption>Motto Graphic</figcaption>
 			</figure>
 			<figure class="filterDiv design-card design">
-				<img src="images/5ELogo2.png" alt="Acupuncture logo" class="img-responsive" id="myImg">
+				<img src="images/5ELogo2.png" alt="Acupuncture logo" class="img-responsive myImg">
 				<i>- Illustrator</i>
 				<figcaption>Living Elements Logo</figcaption>
 			</figure>
 			<figure class="filterDiv design-card design">
-				<img src="images/PremierLogo.jpg" alt="Logo of a Lion" class="img-responsive" id="myImg">
+				<img src="images/PremierLogo.jpg" alt="Logo of a Lion" class="img-responsive myImg">
 				<i>- Illustrator</i>
 				<figcaption>Premier Insurance Logo</figcaption>
 			</figure>
 			<figure class="filterDiv design-card design">
-				<img src="images/RenLogo.png" alt="Logo of a house" class="img-responsive" id="myImg">
+				<img src="images/RenLogo.png" alt="Logo of a house" class="img-responsive myImg">
 				<i>- Illustrator</i>
 				<figcaption>Renovation Logo</figcaption>
 			</figure>
 			<figure class="filterDiv design-card design">
-				<img src="images/TecateLime.jpg" alt="Illustration of a beer & Lime" class="img-responsive" id="myImg">
+				<img src="images/TecateLime.jpg" alt="Illustration of a beer & Lime" class="img-responsive myImg">
 				<i>- Illustrator</i>
 				<figcaption>Tecate Graphic</figcaption>
 			</figure>
 			<figure class="filterDiv design-card design">
-				<img src="images/TuosLogo.png" alt="Tuos logo" class="img-responsive" id="myImg">
+				<img src="images/TuosLogo.png" alt="Tuos logo" class="img-responsive myImg">
 				<i>- Illustrator</i>
 				<figcaption>Tuos Logo</figcaption>
 			</figure>
@@ -153,8 +153,15 @@
 	</main>
 	<footer>
 		<div class="footer-clip"></div>
-		<div class="underline">
+		<div class="contact-head">
 			<h6 id="contact">Contact</h6>
+		</div>
+		<div id="form-outer">
+			<p id="description">Interested in working togeter? Reach out to me here.</p>
+			<form id="contact-form">
+				<label class="box1" id="name-label" for="name">Name</label>
+				<input id="name" type="text" placeholder="John Doe" class="input-container" onkeyup="nameFilter(this)" required=""></input>
+			</form>
 		</div>
 	</footer>
 <script src="https://kit.fontawesome.com/c381f246b1.js" crossorigin="anonymous"></script>

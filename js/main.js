@@ -5,7 +5,7 @@ const codes = document.querySelectorAll(".code");
 const dBtn = document.getElementById("design-btn");
 const designs = document.querySelectorAll(".design");
 var modal = document.getElementById("myModal");
-var img = document.getElementById("myImg");
+var img = document.getElementsByClassName("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 var span = document.getElementById("close");
@@ -47,26 +47,16 @@ dBtn.addEventListener("click", () => {
 });
 
 //Modal Images Viewer
-// not sure why this eventlistener didn't work with src??
-/*
-img.addEventListener("click", () => {
+//look into eventlistener issue vs onclick
+for (var i = 0; i < img.length; i++) {
+  img[i].onclick = function() {
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
-});
-*/
-img.onclick = function() {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+  }
 }
 
 //closes Modal Viewer
-/*
-span.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-*/
 span.onclick = function() {
   modal.style.display = "none";
 }
