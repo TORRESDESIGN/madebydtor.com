@@ -513,6 +513,13 @@ footer {
 	);
 	color: var(--light-color);
 }
+.footer-main {
+	margin: 0px auto;
+  	width: 95%;
+  	min-width: 310px;
+  	max-width: 1200px;
+  	height: auto;
+}
 .contact-head {
 	border-bottom: 2px solid var(--bg-light-blue);
 	margin: 0 auto;
