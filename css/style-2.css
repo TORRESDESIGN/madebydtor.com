@@ -518,24 +518,34 @@ footer {
   	width: 95%;
   	min-width: 310px;
   	max-width: 1200px;
-  	height: auto;
 }
 .contact-head {
 	border-bottom: 2px solid var(--bg-light-blue);
 	margin: 0 auto;
-	width: 95%;
-	min-width: 310px;
-	max-width: 1200px;
-	height: auto;
+	padding-bottom: 0.75em;
 }
 #form-outer {
 	display: grid;
   	column-gap: 15px;
 	grid-template-columns: 1fr 1fr;
 	min-width: 310px;
-	max-width: 120;
-	width: 95%;
-	margin: 0 auto;
+	max-width: 100%;
+	margin: 0.75em auto;
+}
+#form-outer p {
+	opacity: 1;
+	font-size: 0.83em;
+}
+form {
+	display: grid;
+	grid-column-gap: 20px;
+ 	grid-row-gap: 20px;
+ 	grid-template-columns: repeat(2, 1fr);
+ 	border: 1px solid white;
+ 	padding: 1em;
+}
+.box1 {
+	grid-column: 1;
 }
 
 @keyframes slow-move {
@@ -692,10 +702,10 @@ footer {
 	width: 100%;
 	padding: 1px 7px;
 	background: var(--background-color);
-	}
-	.modal-content {
-		width: 100%;
-	}
+  }
+  .modal-content {
+  	width: 100%;
+  }
 }
 /*@media query end*/
 
