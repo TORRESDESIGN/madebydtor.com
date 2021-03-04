@@ -130,9 +130,11 @@ nav {
 	display: grid;
 	grid-template-columns: auto 1fr auto;
 }
+/* delete this
 .nav-plain {
 	grid-template-columns: auto 1fr;
 }
+*/
 /*hides checkbox and FA hamburger menu*/
 #nav-toggle,
 .hamburger-menu {
@@ -525,9 +527,6 @@ footer {
 	padding-bottom: 0.75em;
 }
 #form-outer {
-	display: grid;
-  	column-gap: 15px;
-	grid-template-columns: 1fr 1fr;
 	min-width: 310px;
 	max-width: 100%;
 	margin: 0.75em auto;
@@ -536,16 +535,28 @@ footer {
 	opacity: 1;
 	font-size: 0.83em;
 }
-form {
+#contact-form {
 	display: grid;
-	grid-column-gap: 20px;
- 	grid-row-gap: 20px;
- 	grid-template-columns: repeat(2, 1fr);
+  	grid-column-gap: 20px;
+  	grid-row-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+ 	grid-template-rows: repeat(5, auto);
  	border: 1px solid white;
  	padding: 1em;
+ 	margin: 0.75em 0;
 }
-.box1 {
+.box1, .input-container {
 	grid-column: 1;
+	grid-row: 1;
+}
+.input-container {
+	border-radius: 5px;
+	font-size: 20px;
+	width: 100%;
+	padding: 18px 15px;
+	border: none;
+	background: var(--bg-light-blue);
+	opacity: .90;
 }
 
 @keyframes slow-move {
