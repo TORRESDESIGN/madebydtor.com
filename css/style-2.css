@@ -12,6 +12,12 @@
 	--secondary-purple: #AA00FF;
 	--bg-light-blue: #E0F7FA;
 }
+/*removes wonky spcace on bottom of page*/
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	background: var(--bg-light-blue);
@@ -540,23 +546,27 @@ footer {
   	grid-column-gap: 20px;
   	grid-row-gap: 20px;
 	grid-template-columns: repeat(2, 1fr);
- 	grid-template-rows: repeat(5, auto);
- 	border: 1px solid white;
- 	padding: 1em;
- 	margin: 0.75em 0;
+ 	grid-template-rows: repeat(4, auto);
+ 	padding-top: 1.5em;
+ 	margin: 0.75em 0 0 0;
+ 	color: var(--bg-light-blue);
 }
 .box1, .input-container {
 	grid-column: 1;
 	grid-row: 1;
 }
+.box3 {
+	grid-column: 1 / span 2;
+	grid-row:2;
+}
 .input-container {
 	border-radius: 5px;
-	font-size: 20px;
+	font-size: 1em;
 	width: 100%;
-	padding: 18px 15px;
+	padding: .5em .5em;
 	border: none;
 	background: var(--bg-light-blue);
-	opacity: .90;
+	opacity: .95;
 }
 
 @keyframes slow-move {

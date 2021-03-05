@@ -160,8 +160,15 @@
 			<div id="form-outer">
 				<p id="description">Interested in working togeter? Reach out to me here.</p>
 				<form id="contact-form">
-					<label class="box1" id="name-label" for="name">Name</label>
-					<input id="name" type="text" placeholder="John Doe" class="input-container" onkeyup="nameFilter(this)" required=""></input>
+					<label class="box1" id="name-label" for="name">Name
+						<input id="name" type="text" placeholder="John Doe" class="input-container" onkeyup="nameFilter(this)" required></input>
+					</label>
+					<label class="box2" id="email-label" for="email">Email
+						<input id="email" type="email" placeholder="YourEmail@email.com" class="input-container" onkeyup="" required></input>
+					</label>
+					<label class="box3" id="message-label" for="message">Message
+						<textarea id="message" type="text" placeholder="I'm interested in interviewing you for a job opportunity!" class="input-container" rows="3" cols="100" maxlength="300" required></textarea>
+					</label>
 				</form>
 			</div>
 		</div>
