@@ -160,6 +160,7 @@
 			<div id="form-outer">
 				<p id="description">Interested in working togeter? Reach out to me here.</p>
 				<form id="contact-form">
+					<!-- Legit fields -->
 					<label class="box1" id="name-label" for="name">Name
 						<input id="name" type="text" placeholder="John Doe" class="input-container" onkeyup="nameFilter(this)" required></input>
 					</label>
@@ -168,6 +169,16 @@
 					</label>
 					<label class="box3" id="message-label" for="message">Message
 						<textarea id="message" type="text" placeholder="I'm interested in interviewing you for a job opportunity!" class="input-container" rows="3" cols="100" maxlength="300" required></textarea>
+					</label>
+					<!-- Hun'ey pot fields -->
+					<label class="nomohuney" for="name"></label>
+					<input class="nomohuney" autocomplete="off" type="text" id="name" name="name" placeholder="Your name here"></input>
+					<label class="nomohuney" for="email"></label>
+					<input class="nomohuney" autocomplete="off" type="email" id="email" name="email" placeholder="Your email here"></input>
+					<label class="nomohuney" for="message"></label>
+					<textarea class="nomohuney" autocomplete="off" type="text" id="message" name="message" placeholder="Your message here"></textarea>
+					<label class="box4" for="submit">
+						<button class="btn-submit" id="submit">Submit</button>
 					</label>
 				</form>
 			</div>
