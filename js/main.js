@@ -1,6 +1,7 @@
 const link = document.getElementsByClassName("btn");
 const fn = document.getElementById("first-name");
 const cBtn = document.getElementById("code-btn");
+const nToggle = document.getElementById("nav-toggle");
 const codes = document.querySelectorAll(".code");
 const dBtn = document.getElementById("design-btn");
 const designs = document.querySelectorAll(".design");
