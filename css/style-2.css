@@ -1,3 +1,19 @@
+/* Table of Contents:
+   
+   1. global styles
+
+   2. typography
+   
+   3. layout
+      3.1 links
+   
+   4. components
+      4.1 buttons
+
+*/
+
+/* || global styles */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,400,500&display=swap');
 
 * {
@@ -27,6 +43,57 @@ body {
   font-size: 18px;
 }
 
+/* || typography -links  */
+
+
+p {
+  opacity: 0.87;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 2.44em;
+  font-weight: 500;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.14em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+h7 {
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 0.83em;
+  letter-spacing: 0.5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s all ease-in-out;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* || layout  */
+
 header {
   width: 100%;
   height: auto;
@@ -35,6 +102,66 @@ header {
     var(--primary-teal));
   color: var(--light-color);
 }
+
+/*this keeps the nav meat compact for large sceens*/
+nav {
+  max-width: 1720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+nav #logo {
+  margin: 15px 0 15px 15px;
+  font-size: 1.24em;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+main {
+  margin: 0px auto;
+  width: 95%;
+  min-width: 310px;
+  max-width: 1200px;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+  padding-top: 59px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-text {
+  margin-top: 35px;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(90deg,
+    var(--primary-blue),
+    var(--primary-teal));
+  color: var(--light-color);
+}
+
+.footer-main {
+  margin: 0px auto;
+  width: 95%;
+  min-width: 310px;
+  max-width: 1200px;
+}
+
+/* || components -buttons  */
 
 #squares-container {
   top: 59.6px;
@@ -77,58 +204,6 @@ header {
   animation: move-left-up 6s infinite;
 }
 
-.hero {
-  position: relative;
-  padding-top: 59px;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#hero-text {
-  margin-top: 35px;
-  padding: 30px;
-  position: relative;
-  z-index: 2;
-}
-
-p {
-  opacity: 0.87;
-  letter-spacing: 0.5px;
-}
-
-h1 {
-  font-size: 2.44em;
-  font-weight: 500;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2.14em;
-  font-weight: 500;
-}
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 400;
-}
-
-h6 {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-h7 {
-  font-style: italic;
-  text-transform: uppercase;
-  font-size: 0.83em;
-  letter-spacing: 0.5px;
-}
-
 .palindrome-title {
   font-size: 3.5em;
   font-weight: bold;
@@ -148,19 +223,6 @@ h7 {
   border-bottom: 2px solid white;
 }
 
-/*this keeps the nav meat compact for large sceens*/
-nav {
-  max-width: 1720px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-}
-
-/* delete this
-.nav-plain {
-  grid-template-columns: auto 1fr;
-}
-*/
 /*hides checkbox and FA hamburger menu*/
 #nav-toggle,
 .hamburger-menu {
@@ -175,26 +237,6 @@ nav {
 .fa-bars {
   font-size: 1.5em;
   margin-right: 15px;
-}
-
-nav #logo {
-  margin: 15px 0 15px 15px;
-  font-size: 1.24em;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  grid-row: 1;
-  grid-column: 1;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.3s all ease-in-out;
-}
-
-nav a:hover {
-  opacity: 0.7;
 }
 
 .hide-me {
@@ -258,15 +300,6 @@ nav a:hover {
   clip-path: polygon(100% 0, 0 0, 0 100%);
   margin-bottom: 25px;
 }
-
-main {
-  margin: 0px auto;
-  width: 95%;
-  min-width: 310px;
-  max-width: 1200px;
-  height: auto;
-}
-
 .about-container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -618,22 +651,6 @@ i {
   color: var(--bg-light-blue);
   padding: 1em 0;
   height: 150px;
-}
-
-footer {
-  width: 100%;
-  height: auto;
-  background-image: linear-gradient(90deg,
-    var(--primary-blue),
-    var(--primary-teal));
-  color: var(--light-color);
-}
-
-.footer-main {
-  margin: 0px auto;
-  width: 95%;
-  min-width: 310px;
-  max-width: 1200px;
 }
 
 .contact-head {
