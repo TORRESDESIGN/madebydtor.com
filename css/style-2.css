@@ -162,7 +162,27 @@ footer {
 }
 
 #footer-end {
+  font-size: 1.25em;
+  margin-top: 4em;
   text-align: center;
+}
+
+/*a link order: link, visited, hover, active*/
+#footer-end, #footer-end a:link, #footer-end a:visited {
+  color: var(--bg-light-blue); 
+}
+
+#footer-end p {
+  font-size: .75em;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+#footer-end .fab {
+  padding: 1em 0.5em;
+}
+#footer-end a:hover {
+  color: var(--secondary-purple);
 }
 /* || components -buttons  */
 
