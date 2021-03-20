@@ -9,6 +9,13 @@
    
    4. components
       4.1 buttons
+      4.2 cards 
+
+   5. Palindrome page
+
+   6. Animations
+
+   7. Smaller screens
 
 */
 
@@ -186,6 +193,7 @@ footer {
 }
 /* || components -buttons  */
 
+/* header components */
 #squares-container {
   top: 59.6px;
   right: 0;
@@ -225,13 +233,6 @@ footer {
 
 #squares-container span:nth-child(6) {
   animation: move-left-up 6s infinite;
-}
-
-.palindrome-title {
-  font-size: 3.5em;
-  font-weight: bold;
-  opacity: 0.77;
-  letter-spacing: 0.5px;
 }
 
 .nav-container {
@@ -345,9 +346,6 @@ footer {
 .img-circle {
   width: 95%;
   border-radius: 50%;
-}
-
-.center-img {
   margin: auto;
 }
 
@@ -390,84 +388,7 @@ footer {
   margin-right: 20px;
 }
 
-.palindrome-tester {
-  margin-top: 70px;
-  margin-bottom: 70px;
-  width: 100%;
-}
-
-.palindrome-tester h1 {
-  text-align: left;
-}
-
-.input-box {
-  margin-top: 1em;
-  border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-  font-size: 1.83em;
-  height: 60px;
-  width: 100%;
-  padding: 1px 7px;
-  background: var(--background-color);
-}
-
-.input-box:focus {
-  outline: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
-}
-
-.wrapper {
-  margin-top: 1em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 1em 1em;
-}
-
-button {
-  cursor: pointer;
-}
-
-button:disabled {
-  opacity: 50%;
-  cursor: not-allowed;
-}
-
-.btn-check {
-  font-size: 1em;
-  padding: 10px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-  background: var(--primary-blue);
-  color: var(--bg-light-blue);
-  border: none;
-  transition: 0.3s all ease-in-out;
-}
-
-.btn-check:hover {
-  color: white;
-}
-
-.btn-check:focus {
-  opacity: 0.87;
-  outline: none;
-}
-
-.btn-delete {
-  font-size: 1em;
-  padding: 10px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-  background: black;
-  color: var(--bg-light-blue);
-  border: none;
-  transition: 0.3s all ease-in-out;
-}
-
-.btn-delete:hover {
-  color: white;
-}
-
+/* Contact Page */
 .btn-delete:focus {
   opacity: 0.87;
   outline: none;
@@ -485,13 +406,13 @@ button:disabled {
   color: var(--bg-light-blue);
 }
 
-/*fix hover and active colors*/
 .btn-submit:hover {
   border-color: var(--primary-teal);
 }
 
 .btn-submit:active {
-  background-color: var(--primary-teal);
+  border-color: black;
+  color: black;
 }
 
 details {
@@ -500,12 +421,6 @@ details {
   cursor: pointer;
 }
 
-/*
-.underline {
-  margin: 0 auto;
-  /*padding-bottom: 5px;*/
-/*border-bottom: 2px solid black;
-}*/
 #palindromeStatus {
   margin-top: 1em;
   text-align: center;
@@ -741,6 +656,94 @@ i {
   z-index: -1;
 }
 
+/* || Palindrome page */
+.palindrome-tester {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+.palindrome-tester h1 {
+  text-align: left;
+}
+
+.palindrome-title {
+  font-size: 3.5em;
+  font-weight: bold;
+  opacity: 0.77;
+  letter-spacing: 0.5px;
+}
+
+.input-box {
+  margin-top: 1em;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  font-size: 1.83em;
+  height: 60px;
+  width: 100%;
+  padding: 1px 7px;
+  background: var(--background-color);
+}
+
+.input-box:focus {
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.wrapper {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 1em 1em;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
+.btn-check {
+  font-size: 1em;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: var(--primary-blue);
+  color: var(--bg-light-blue);
+  border: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn-check:hover {
+  color: white;
+}
+
+.btn-check:focus {
+  opacity: 0.87;
+  outline: none;
+}
+
+.btn-delete {
+  font-size: 1em;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: black;
+  color: var(--bg-light-blue);
+  border: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn-delete:hover {
+  color: white;
+}
+
+/* || Animations */
+
 @keyframes slow-move {
   0% {
     margin-left: 0px;
@@ -845,6 +848,8 @@ i {
     opacity: 0%;
   }
 }
+
+/* || smaller screens */
 
 @media only screen and (max-width: 854px) {
   body {
