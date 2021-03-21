@@ -46,23 +46,6 @@
     }else {
       echo "The server failed to send the message. Please try again later.";
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
 
  ?>
