@@ -1,6 +1,8 @@
 
 <?php
-  //PHP variable starts with the '$'
+
+
+//PHP variable starts with the '$'
 //$_POST is a super global var used to collect form data after submitting and HTML form with method="post",
 //also used to pass variables
 if ( isset($_POST['namenombre']) && isset($_POST['emailcorreo']) && isset($_POST['messagemensaje']) ) {
@@ -9,11 +11,11 @@ if ( isset($_POST['namenombre']) && isset($_POST['emailcorreo']) && isset($_POST
 
   $e = $_POST['emailcorreo'];
 
-  $p = n12br($_POST['messagemensaje']);//line breaks
+  $p = nl2br($_POST['messagemensaje']);//line breaks
 
-  $to = 'daniel.torres.84@gmail.com';
+  $to = 'daniel@madebydtor.com';
 
-  $from = 'daniel@madebydtor.com';
+  $from = $e;
 
   $subject = 'Contact Form Message';
 
@@ -27,13 +29,16 @@ if ( isset($_POST['namenombre']) && isset($_POST['emailcorreo']) && isset($_POST
 
   if(mail($to, $subject, $message, $headers) ){
 
-    echo "success";
+    echo "success good bro";
 
   }else {
 
     echo "The server failed to send the message. Please try again later.";
 
   }
+
+
+
 }
 
 /*
