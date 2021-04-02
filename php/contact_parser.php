@@ -29,7 +29,7 @@ if ( isset($_POST['namenombre']) && isset($_POST['emailcorreo']) && isset($_POST
 
   if(mail($to, $subject, $message, $headers) ){
 
-    echo "success good bro";
+    echo "success";
 
   }else {
 

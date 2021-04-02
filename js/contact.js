@@ -56,16 +56,13 @@ function submitForm() {
   ajax.onreadystatechange = function() {
 
     if(ajax.readyState == 4 && ajax.status == 200) {
-      console.log(ajax.responseText);
-      var result = ajax.responseText;
 
-      if(result == "success") {
-        console.log("yo");
+      if(this.responseText.trim() == "success") {//trim removes space on front/end of callback
 
         _("contact-form").innerHTML = '<h2>Thanks '+_("namenombre").value+', your message has been sent.</h2>';
 
       }else {
-        console.log("ho");
+
         _("status").innerHTML = ajax.responseText;
 
         _("submit").disabled = false;
