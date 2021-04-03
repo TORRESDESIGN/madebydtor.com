@@ -42,11 +42,11 @@ function submitForm() {
 
   formdata.append( "messagemensaje", _("messagemensaje").value );
 
-  //formdata.append( "name", _("name").value );
+  formdata.append( "name", _("name").value );
 
-  //formdata.append( "email", _("email").value );
+  formdata.append( "email", _("email").value );
 
-  //formdata.append( "message", _("message").value );
+  formdata.append( "message", _("message").value );
 
 
   var ajax = new XMLHttpRequest();
@@ -57,7 +57,7 @@ function submitForm() {
 
     if(ajax.readyState == 4 && ajax.status == 200) {
 
-      if(this.responseText.trim() == "success") {//trim removes space on front/end of callback
+      if(this.responseText.trim() == "success") {//trim removes space on front/end of callback 
 
         _("contact-form").innerHTML = '<h2>Thanks '+_("namenombre").value+', your message has been sent.</h2>';
 
