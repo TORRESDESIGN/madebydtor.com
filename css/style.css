@@ -135,7 +135,7 @@ nav #logo {
 }
 
 main {
-  margin: 0px auto;
+  margin: 0px auto 2em auto;
   width: 95%;
   min-width: 310px;
   max-width: 1200px;
@@ -858,8 +858,8 @@ button:disabled {
 }
 
 /* || smaller screens */
-
-@media only screen and (max-width: 854px) {
+/*OG: 854px*/
+@media only screen and (max-width: 740px) {
   body {
     font-size: 16px;
   }
@@ -871,7 +871,9 @@ button:disabled {
   h2 {
     font-size: 2em;
   }
-
+  .palindrome-title {
+    font-size: 3em;
+  }
   .hamburger-menu {
     display: inline-block;
     grid-column: 3;
@@ -939,10 +941,10 @@ button:disabled {
     margin-top: 1em;
     border: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-    font-size: 1.65em;
-    height: 60px;
+    font-size: 1em;
+    height: 40px;
     width: 100%;
-    padding: 1px 7px;
+    padding: 0px 7px;
     background: var(--background-color);
   }
 
